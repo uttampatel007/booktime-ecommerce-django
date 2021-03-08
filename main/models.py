@@ -26,7 +26,10 @@ class ProductImage(models.Model):
 	image = models.ImageField(upload_to="product-images")
 	thumbnail = models.ImageField(upload_to="product-thumbnails", null=True)
 
+	def __str__(self):
+		return self.name
 
+		
 class ProductTags(models.Model):
 	product = models.ManyToManyField(Product, blank=True)
 	name = models.CharField(max_length=32)
