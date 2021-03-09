@@ -27,7 +27,7 @@ class ProductImage(models.Model):
 	thumbnail = models.ImageField(upload_to="product-thumbnails", null=True)
 
 	def __str__(self):
-		return self.name
+		return self.product.name
 
 		
 class ProductTags(models.Model):
