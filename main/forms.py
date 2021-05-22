@@ -2,6 +2,13 @@ import logging
 from django import forms
 from django.core.mail import send_mail
 
+from django.contrib.auth.forms import (
+ UserCreationForm as DjangoUserCreationForm
+)
+from django.contrib.auth.forms import UsernameField
+from . import models
+
+
 logger = logging.getLogger(__name__)
 
 
@@ -22,3 +29,4 @@ class ContactForm(forms.Form):
 			["customerservice@booktime.domain"],
 			fail_silently=False,
 		)
+

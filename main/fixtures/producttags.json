@@ -1,0 +1,29 @@
+[
+{
+  "model": "main.producttags",
+  "fields": {
+    "name": "Education",
+    "slug": "education",
+    "description": "Educational Books",
+    "active": true
+  }
+},
+{
+  "model": "main.producttags",
+  "fields": {
+    "name": "Personality",
+    "slug": "personality",
+    "description": "Self Help Books Updated",
+    "active": true
+  }
+},
+{
+  "model": "main.producttags",
+  "fields": {
+    "name": "Finance",
+    "slug": "finance",
+    "description": "Financial Education",
+    "active": true
+  }
+}
+]
